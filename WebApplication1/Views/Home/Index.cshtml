@@ -1,0 +1,51 @@
+﻿@page
+<div class="container">
+    <div class="row p-1">
+        <p id="userIdLabel"></p>
+    </div>
+    <div class="row p-1">
+        <div class="col-1">GroupId</div>
+        <div class="col-5"><input type="text" id="groupIdInput" /></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <label for="dateChoice">Choose date</label>
+            <input type="date" id="dateChoice"/>
+        </div>
+    </div>
+    <div class="row p1">
+        <p>Changes of groupId and chosen date determine which session the user should be connected to</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <button type="button" class="btn btn-primary" id="sendButton">Create delivery</button>
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <h4>Monitoring info</h4>
+            <div id="monitoringInfo">
+                
+            </div>
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col">
+            <div id="deliveriesList">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
